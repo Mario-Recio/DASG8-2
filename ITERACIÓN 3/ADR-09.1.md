@@ -1,0 +1,24 @@
+# ADR-09.1.Arquitectura Pipe and Filter para las 3 familias de sensores
+
+* Status: rejected
+* Deciders: ASS,ASC
+* Date: 2022-11-16
+
+Technical Story: Architecture Decision
+
+## Context and Problem Statement
+
+Se necesita implementar una familia de 3 tipos de sensores que se comuniquen entre sí, de forma que el primero envía información al segundo y este al tercero que finalmente lo envía al centro de notificaciones.
+
+## Decision Drivers
+
+* Ya que los sensores se comunican con otros y el centro de notificaciones, se utiliza un pipe and filter para comunicar los datos entre cada uno de ellos.
+
+## Considered Options
+
+* ADR-09
+* ADR-09.1
+
+## Decision Outcome
+
+Chosen option: "ADR-09", because Se ha rechazado esta decisión, ya que la comunicación entre los distintos sensores y el centro de notificaciones es única y no ramificada, por lo que un diseño por capas es más apropiado.

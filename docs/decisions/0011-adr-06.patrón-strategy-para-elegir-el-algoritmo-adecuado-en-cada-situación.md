@@ -1,0 +1,24 @@
+# ADR-06.Patrón Strategy para elegir el algoritmo adecuado en cada situación
+
+* Status: accepted
+* Deciders: ASS,ASC
+* Date: 2022-11-10
+
+Technical Story: Architecture Decision
+
+## Context and Problem Statement
+
+Se requiere un patrón para seleccionar el algoritmo inteligente predictivo óptimo en cada situación entre los dos que dispone nuestro software: uno para optimizar el volumen de órdenes de trabajo y otro para predecir el fallo una línea de trabajo y asignar recursos de otras líneas.
+
+## Decision Drivers
+
+* Se usará un patrón Strategy para elegir qué algoritmo usar en cada momento debido a su naturaleza de escoger entre un algoritmo u otro en un mismo contexto.
+
+## Considered Options
+
+* ADR-06
+* ADR-06.1
+
+## Decision Outcome
+
+Chosen option: "ADR-06", because Se acepta esta decisión, ya que el patrón Strategy permite precisamente, seleccionar un algoritmo u otro dependiendo de la situación o lo que interese en cada momento, lo que se ajusta a nuestro problema.

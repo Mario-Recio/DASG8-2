@@ -1,0 +1,24 @@
+# ADR-02.1.Arquitectura cliente-servidor para notificaciones
+
+* Status: rejected
+* Deciders: ASS,ASC
+* Date: 2022-11-06
+
+Technical Story: Architecture Decision
+
+## Context and Problem Statement
+
+Se necesita un sistema de gestión y envio de notificaciones, que reaccione a las modificaciones detectadas por los sensores, enviando las señales pertinentes.
+
+## Decision Drivers
+
+* Se necesita conectar el sistema interno con los operarios para tener acceso a toda la información que se quiera consultar.
+
+## Considered Options
+
+* ADR-02
+* ADR-02.1
+
+## Decision Outcome
+
+Chosen option: "ADR-02", because Se ha rechazado esta opción porque los cambios producidos en los sensores son constantes, por lo que no tiene sentido una relación cliente-servidor, donde haya que mantener una conexión permanente.
